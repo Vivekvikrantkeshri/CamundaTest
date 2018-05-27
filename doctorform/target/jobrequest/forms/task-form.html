@@ -1,0 +1,26 @@
+<strong>Here you would put the actual form to work on the task</strong>
+
+<p>
+  You can use this form through Camunda Tasklist
+  by setting the formKey of a BPMN User Task to:
+  <code>embedded:app:forms/task-form.html</code>
+</p>
+<!--  
+<form name="checkavailability">
+Gender:
+		<input type='text' name='gender'><br>
+</form>
+-->
+
+  
+<form name="checkavailability">
+  <div class="form-group">
+    <label for="personName">Person Name</label>
+    <input class="form-control" cam-variable-type="String" cam-variable-name="personName" name="personName" readonly="true"/>
+  </div>
+  <div class="form-group">
+    <label for="age">Job</label>
+    <input class="form-control" cam-variable-type="number" cam-variable-name="age" name ="age"/>
+  </div>
+</form>
+

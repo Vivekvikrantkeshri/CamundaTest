@@ -1,0 +1,71 @@
+  </div>
+
+  <div class="col-xs-6">
+    <h2>Contact Data</h2>
+
+    <!-- Gender -->
+    <div class="form-group">
+      <label for="gender">Gender</label>
+      <div class="controls">
+
+        <!--select box -->
+        <select class="form-control"
+           cam-variable-name="gender"
+           cam-variable-type="String"
+           ng-change="appointment()">
+          <option value="m" checked>Mr.</option>
+          <option value="f">Mrs.</option>
+        </select>
+
+    </div>
+    </div>
+
+    <!-- Firstname -->
+    <div class="form-group">
+      <label for="inputName">Firstname</label>
+      <div class="controls">
+        <input class="form-control"
+               required
+               type="text"
+               cam-variable-name="Name"
+               cam-variable-type="String"
+               placeholder="John"
+               ng-minlength="2"
+               ng-maxlength="20" />
+      </div>
+    </div>
+    </div>
+
+    <!-- Age -->
+    <div class="form-group">
+      <label for="inputAge">Age</label>
+      <div class="controls">
+        <input class="form-control"
+               required
+               type="text"
+               cam-variable-name="Age"
+               cam-variable-type="number"
+               placeholder="22"
+               ng-minlength="1"
+               ng-maxlength="20" />
+      </div>
+    </div>
+
+    <!-- Time -->
+    <div class="form-group">
+      <label for="inputTime">Time</label>
+      <div class="controls">
+       <input class="form-control"
+               required
+               type="text"
+               cam-variable-name="Time"
+               cam-variable-type="number"
+               placeholder="1"
+               />
+      </div>
+    </div>
+
+  </div>
+
+</div>
+</form>
